@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+body {
+  line-height: 1; }
+
+a {
+  text-decoration: none;
+  font-size: 100%;
+  background: transparent;
+  color: inherit; }
+
+ol, ul {
+  list-style: none; }
+
+button,
+select,
+textarea {
+  font-size: 100%;
+  vertical-align: middle;
+  background: transparent;
+  border: none;
+  outline: none; }
+
+img {
+  max-width: 100%;
+  height: auto;
+  border: none;
+  display: block; }
+
+:root {
+  --primary-red: hsl(1, 90%, 64%);
+  --primary-blue: hsl(219, 85%, 26%);
+  --neutral-white: hsl(0, 0%, 100%);
+  --neutral-very-light-grayish-blue: hsl(210, 60%, 98%);
+  --neutral-light-grayish-blue-1: hsl(211, 68%, 94%);
+  --neutral-light-grayish-blue-2: hsl(205, 33%, 90%);
+  --neutral-grayish-blue: hsl(219, 14%, 63%);
+  --neutral-dark-grayish-blue: hsl(219, 12%, 42%);
+  --neutral-very-dark-blue: hsl(224, 21%, 14%);
+  --font-plus-jakarta: 'Plus Jakarta Sans', sans-serif;
+  /* Jakarta Medium (500) */
+  --font-weight-jakarta-medium: 500;
+  /* Jakarta ExtraBold (800) */
+  --font-weight-jakarta-extrabold: 800; }
+
+body {
+  font-family: var(--font-plus-jakarta);
+  display: grid;
+  place-content: center;
+  font-size: 16px; }
+
+#notificationsTitle {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px; }
