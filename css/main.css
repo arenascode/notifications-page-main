@@ -57,3 +57,70 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 10px; }
+  #notificationsTitle p {
+    font-weight: var(--font-weight-jakarta-extrabold); }
+  #notificationsTitle #notificationsCount {
+    background-color: var(--primary-blue);
+    color: var(--neutral-white);
+    padding: 2px 6px 2px 6px;
+    border-radius: 20%;
+    margin-left: 3px; }
+  #notificationsTitle #markAsAllRead {
+    color: var(--neutral-dark-grayish-blue);
+    font-weight: var(--font-weight-jakarta-medium); }
+  #notificationsTitle #markAsAllRead:hover {
+    cursor: pointer;
+    color: var(--primary-blue); }
+
+#notificationsBody {
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  row-gap: 10px; }
+  #notificationsBody .notification {
+    display: flex;
+    margin: 5px; }
+    #notificationsBody .notification img {
+      width: 40px;
+      height: 40px;
+      margin: 10px; }
+    #notificationsBody .notification .notificationDescription {
+      color: var(--neutral-dark-grayish-blue);
+      padding: 5px 18px 0px 5px;
+      display: flex;
+      flex-grow: 1;
+      flex-direction: column; }
+      #notificationsBody .notification .notificationDescription p {
+        font-size: 14px; }
+        #notificationsBody .notification .notificationDescription p span {
+          color: black;
+          font-weight: var(--font-weight-jakarta-extrabold);
+          margin-right: 5px; }
+        #notificationsBody .notification .notificationDescription p span:hover {
+          cursor: pointer;
+          color: var(--primary-blue); }
+      #notificationsBody .notification .notificationDescription small {
+        color: var(--neutral-grayish-blue);
+        font-weight: var(--font-weight-jakarta-medium);
+        margin: 3px; }
+      #notificationsBody .notification .notificationDescription .notificationMessage {
+        border: solid 1px;
+        border-radius: 5px;
+        border-color: var(--neutral-light-grayish-blue-2);
+        text-align: left;
+        margin: 5px;
+        padding: 10px;
+        font-size: 12px;
+        color: var(--neutral-dark-grayish-bluegrayish-blue); }
+      #notificationsBody .notification .notificationDescription .notificationMessage:hover {
+        cursor: pointer;
+        background-color: var(--neutral-light-grayish-blue-2); }
+      #notificationsBody .notification .notificationDescription p .group {
+        color: var(--primary-blue); }
+      #notificationsBody .notification .notificationDescription p .post {
+        color: var(--neutral-dark-grayish-bluegrayish-blue);
+        font-weight: var(--font-weight-jakarta-extrabold); }
+    #notificationsBody .notification .pictureCommented {
+      margin-right: 35px; }
+    #notificationsBody .notification .pictureCommented {
+      cursor: pointer; }
