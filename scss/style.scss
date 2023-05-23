@@ -162,14 +162,21 @@ body {
 }
 
 @media (min-width: 1440px) {
-  .circleUnreadNotif1 {
+  #notificationsTitle {
+    width: 70%;
+  }
+  #notificationsBody {
+    width: 70%;
+    .notification {
+    .notificationDescription {
+      .circleUnreadNotif1 {
           background-color: var(--primary-red);
           width: 8px;
           height: 8px;
           border-radius: 50%;
           position: absolute;
-          right: 800px;
-          top: 74px;
+          right: 730px;
+          top: 61px;
         }
         .circleUnreadNotif2 {
           background-color: var(--primary-red);
@@ -177,7 +184,7 @@ body {
           height: 8px;
           border-radius: 50%;
           position: absolute;
-          right: 106px;
+          right: 995px;
           top: 140px;
         }
         .circleUnreadNotif3 {
@@ -186,7 +193,25 @@ body {
           height: 8px;
           border-radius: 50%;
           position: absolute;
-          right: 165px;
-          top: 235px;
+          right: 828px;
+          top: 221px;
         }
+        .notificationMessage {
+        border: solid 1px;
+        border-radius: 5px;
+        border-color: var(--neutral-light-grayish-blue-1);
+        text-align: left;
+        margin: 5px;
+        padding: 10px;
+        font-size: 12px;
+        color: var(--neutral-dark-grayish-bluegrayish-blue);
+        letter-spacing: 1px;
+        line-height: 1.2;
+        width: 70%;
+      }
+    }
+  }
+  
+  }
+  
 }
