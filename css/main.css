@@ -77,6 +77,8 @@ body {
   flex-direction: column;
   padding: 8px;
   row-gap: 10px; }
+  #notificationsBody .notification:nth-child(-n+3) {
+    background-color: var(--neutral-very-light-grayish-blue); }
   #notificationsBody .notification {
     display: flex;
     margin: 5px; }
@@ -99,6 +101,30 @@ body {
         #notificationsBody .notification .notificationDescription p span:hover {
           cursor: pointer;
           color: var(--primary-blue); }
+      #notificationsBody .notification .notificationDescription .circleUnreadNotif1 {
+        background-color: var(--primary-red);
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        position: absolute;
+        right: 92px;
+        top: 74px; }
+      #notificationsBody .notification .notificationDescription .circleUnreadNotif2 {
+        background-color: var(--primary-red);
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        position: absolute;
+        right: 106px;
+        top: 140px; }
+      #notificationsBody .notification .notificationDescription .circleUnreadNotif3 {
+        background-color: var(--primary-red);
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        position: absolute;
+        right: 165px;
+        top: 235px; }
       #notificationsBody .notification .notificationDescription small {
         color: var(--neutral-grayish-blue);
         font-weight: var(--font-weight-jakarta-medium);
@@ -106,12 +132,14 @@ body {
       #notificationsBody .notification .notificationDescription .notificationMessage {
         border: solid 1px;
         border-radius: 5px;
-        border-color: var(--neutral-light-grayish-blue-2);
+        border-color: var(--neutral-light-grayish-blue-1);
         text-align: left;
         margin: 5px;
         padding: 10px;
         font-size: 12px;
-        color: var(--neutral-dark-grayish-bluegrayish-blue); }
+        color: var(--neutral-dark-grayish-bluegrayish-blue);
+        letter-spacing: 1px;
+        line-height: 1.2; }
       #notificationsBody .notification .notificationDescription .notificationMessage:hover {
         cursor: pointer;
         background-color: var(--neutral-light-grayish-blue-2); }
@@ -124,3 +152,29 @@ body {
       margin-right: 35px; }
     #notificationsBody .notification .pictureCommented {
       cursor: pointer; }
+
+@media (min-width: 1440px) {
+  .circleUnreadNotif1 {
+    background-color: var(--primary-red);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    position: absolute;
+    right: 800px;
+    top: 74px; }
+  .circleUnreadNotif2 {
+    background-color: var(--primary-red);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    position: absolute;
+    right: 106px;
+    top: 140px; }
+  .circleUnreadNotif3 {
+    background-color: var(--primary-red);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    position: absolute;
+    right: 165px;
+    top: 235px; } }

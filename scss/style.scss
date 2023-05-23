@@ -62,7 +62,10 @@ body {
   flex-direction: column;
   padding: 8px;
   row-gap: 10px;
-
+  
+  .notification:nth-child(-n+3) {
+    background-color: var(--neutral-very-light-grayish-blue);
+  }
   .notification {
     display: flex;
     //height: 50px;
@@ -91,7 +94,34 @@ body {
         color: var(--primary-blue)
         }
       }
-      small {
+      .circleUnreadNotif1 {
+          background-color: var(--primary-red);
+          width: 8px;
+          height: 8px;
+          border-radius: 50%;
+          position: absolute;
+          right: 92px;
+          top: 74px;
+        }
+        .circleUnreadNotif2 {
+          background-color: var(--primary-red);
+          width: 8px;
+          height: 8px;
+          border-radius: 50%;
+          position: absolute;
+          right: 106px;
+          top: 140px;
+        }
+        .circleUnreadNotif3 {
+          background-color: var(--primary-red);
+          width: 8px;
+          height: 8px;
+          border-radius: 50%;
+          position: absolute;
+          right: 165px;
+          top: 235px;
+        }
+        small {
         color:var(--neutral-grayish-blue);
         font-weight: var(--font-weight-jakarta-medium);
         margin: 3px;
@@ -99,12 +129,14 @@ body {
       .notificationMessage {
         border: solid 1px;
         border-radius: 5px;
-        border-color: var(--neutral-light-grayish-blue-2);
+        border-color: var(--neutral-light-grayish-blue-1);
         text-align: left;
         margin: 5px;
         padding: 10px;
         font-size: 12px;
         color: var(--neutral-dark-grayish-bluegrayish-blue);
+        letter-spacing: 1px;
+        line-height: 1.2;
       }
       .notificationMessage:hover{
         cursor: pointer;
@@ -125,4 +157,36 @@ body {
   cursor: pointer;
       }
     }
+
+  
+}
+
+@media (min-width: 1440px) {
+  .circleUnreadNotif1 {
+          background-color: var(--primary-red);
+          width: 8px;
+          height: 8px;
+          border-radius: 50%;
+          position: absolute;
+          right: 800px;
+          top: 74px;
+        }
+        .circleUnreadNotif2 {
+          background-color: var(--primary-red);
+          width: 8px;
+          height: 8px;
+          border-radius: 50%;
+          position: absolute;
+          right: 106px;
+          top: 140px;
+        }
+        .circleUnreadNotif3 {
+          background-color: var(--primary-red);
+          width: 8px;
+          height: 8px;
+          border-radius: 50%;
+          position: absolute;
+          right: 165px;
+          top: 235px;
+        }
 }

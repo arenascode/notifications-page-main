@@ -12,7 +12,7 @@
     <main>
       <section id="notificationsTitle">
         <p>Notifications <span id="notificationsCount">3</span></p>
-        <button type="button" id="markAsAllRead">Mark all as read</button>
+        <button type="button" id="markAsAllRead" onclick="markAllAsRead()">Mark all as read</button>
       </section>
 
       <section id="notificationsBody">
@@ -21,8 +21,10 @@
           <div class="notificationDescription">
             <p>
               <span>Mark Webber</span> reacted to your recent post <span class="post">first
-              tournament today!</span> 
+              tournament today!</span>
             </p>
+            <div id='circle1' class="circleUnreadNotif1">
+            </div> 
             <small>1m ago</small>
           </div>
         </div>
@@ -30,6 +32,7 @@
           <img src="./assets/images/avatar-angela-gray.webp" alt="Avatar" />
           <div class="notificationDescription">
             <p><span>Angela Gray</span> followed you</p>
+            <div id='circle2'class="circleUnreadNotif2"></div>
             <small>5m ago</small>
           </div>
         </div>
@@ -40,6 +43,7 @@
               <span>Jacob Thompson</span> has joined your group
               <span class="group">Chess Club</span>
             </p>
+            <div id='circle3' class="circleUnreadNotif3"></div>
             <small>1 day ago</small>
           </div>
         </div>
@@ -98,5 +102,6 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div> -->
-  </body>
+  <script src="./js/index.js"></script>
+</body>
 </html>
